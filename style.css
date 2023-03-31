@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+/*       topo        */
+
+.container {
+    margin: auto;
+    max-width: 1000px;
+    background-color: gray;
+}
+.areageraltopo {
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.arealogo {
+    background-color: royalblue;
+    width: 200px;
+    height: 60px;
+}
