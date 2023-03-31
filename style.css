@@ -9,7 +9,6 @@ body {
 .container {
     margin: auto;
     max-width: 1000px;
-    background-color: gray;
 }
 .areageraltopo {
     height: 80px;
@@ -17,6 +16,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
 }
 .arealogo {
     background-color: royalblue;
@@ -29,4 +30,17 @@ body {
 }
 .menuitems li {
     padding: 15px;
+    background-color: blue;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.menuitems a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/*    section slider *******************/
+
+.slidersection {
+    margin-top: 20px;
 }
