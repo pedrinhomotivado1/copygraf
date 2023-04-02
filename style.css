@@ -1,10 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
 
-/*       topo        */
+/*-------------------       topo  --------------------      */
 
 .container {
     margin: auto;
@@ -39,8 +39,146 @@ body {
     text-decoration: none;
     text-transform: capitalize;
 }
-/*    section slider *******************/
+/* -------------------------------   section slider -------------*******************/
 
 .slidersection {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+/* --------------------------- produtos categorias ----------------------------- */
+.containerproducts {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .filterDiv {
+    background-color: #f2eaff;
+    color: #505050;
+    width: 244px;
+    height: 400px;
+    text-align: center;
+    margin: 2px;
+    flex-wrap: wrap;
+    display: none;
+    border: solid 1px rgb(223, 222, 222); /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #2196F3;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+    bottom: 0;
+  }
+  /* --------------------------- produtos cards ----------------------------------------- */
+  .titulocard {
+    text-transform: uppercase;    
+  }
+  .areadesccard {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .descricaocard {
+    padding: 10px;
+    max-width: 250px;
+    background-color: blue;
+  }
+  .buttoncard {
+    bottom: 0px;
+  }
+/* ----------------------- modal -----------------------*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
