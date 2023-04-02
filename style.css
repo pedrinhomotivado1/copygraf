@@ -48,7 +48,6 @@ body {
 
 /* --------------------------- produtos categorias ----------------------------- */
 .containerproducts {
-    overflow: hidden;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -71,31 +70,35 @@ body {
   .show {
     display: block;
   }
+  aside.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   /* Style the buttons */
   .btn {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: #2196F3;
+    background-color: #9765b4;
     cursor: pointer;
   }
   
   /* Add a light grey background on mouse-over */
   .btn:hover {
-    background-color: #ddd;
+    background-color: #6fa4f5;
   }
   
   /* Add a dark background to the active button */
   .btn.active {
-    background-color: #666;
+    background-color: #01023a;
     color: white;
     bottom: 0;
   }
   /* --------------------------- produtos cards ----------------------------------------- */
-  .titulocard {
-    text-transform: uppercase;    
-  }
+
   .areadesccard {
     display: flex;
     flex-direction: column;
@@ -108,6 +111,14 @@ body {
   }
   .buttoncard {
     bottom: 0px;
+    padding: 5px 10px;
+    background-color: #5cb85c;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0px;
+  }
+  .buttoncard:hover {
+    background-color: #165016;
   }
 /* ----------------------- modal -----------------------*/
 /* The Modal (background) */
@@ -167,7 +178,7 @@ body {
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #f5c1fc;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -179,6 +190,6 @@ body {
   
   /* Add Animation */
   @keyframes animatetop {
-    from {top: -300px; opacity: 0}
+    from {top: -500px; opacity: 0}
     to {top: 0; opacity: 1}
   }
