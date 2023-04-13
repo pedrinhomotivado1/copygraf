@@ -53,8 +53,6 @@ body {
   padding: 5px;
   max-height: 200px;
 }
-.imagembox img {
-}
 .containerproducts {
     display: flex;
     justify-content: center;
@@ -127,12 +125,14 @@ body {
   }
   .descricaocard:hover {
     background-color: #aa2bf3;
+    cursor: pointer;
   }
   .buttoncardbuy {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: #5cb85c;
     border-radius: 5px;
+    text-decoration: none;
   }
   .buttoncardbuy:hover {
     background-color: #19e919;
