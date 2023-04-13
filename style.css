@@ -47,6 +47,14 @@ body {
 }
 
 /* --------------------------- produtos categorias ----------------------------- */
+.imagembox {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  max-height: 200px;
+}
+.imagembox img {
+}
 .containerproducts {
     display: flex;
     justify-content: center;
@@ -56,6 +64,7 @@ body {
   
   .filterDiv {
     background-color: #f2eaff;
+    border-radius: 5px;
     color: #505050;
     width: 244px;
     height: 400px;
@@ -64,6 +73,10 @@ body {
     flex-wrap: wrap;
     display: none;
     border: solid 1px rgb(223, 222, 222); /* Hidden by default */
+    transition: transform .2s; /* Animation */
+  }
+  .filterDiv:hover {    
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
   
   /* The "show" class is added to the filtered elements */
@@ -84,6 +97,7 @@ body {
     padding: 12px 16px;
     background-color: #9765b4;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   /* Add a light grey background on mouse-over */
@@ -105,20 +119,23 @@ body {
     padding: 5px;
   }
   .descricaocard {
-    padding: 10px;
+    padding: 5px;
     max-width: 250px;
-    background-color: blue;
+    border-radius: 5px;
+    background-color: #9765b4;
+    color: whitesmoke;
   }
-  .buttoncard {
-    bottom: 0px;
+  .descricaocard:hover {
+    background-color: #aa2bf3;
+  }
+  .buttoncardbuy {
+    margin-top: 10px;
     padding: 5px 10px;
     background-color: #5cb85c;
     border-radius: 5px;
-    position: relative;
-    bottom: 0px;
   }
-  .buttoncard:hover {
-    background-color: #165016;
+  .buttoncardbuy:hover {
+    background-color: #19e919;
   }
 /* ----------------------- modal -----------------------*/
 /* The Modal (background) */
@@ -178,7 +195,8 @@ body {
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #f5c1fc;
+    background-color: #9765b4;
+    color: white;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
