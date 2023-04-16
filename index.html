@@ -1,103 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copygraf - inicio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../copygraf/images/imageslidermaker/ism/css/my-slider.css"/>
-    <script src="../copygraf/images/imageslidermaker/ism/js/ism-2.2.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copygraf - inicio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../copygraf/images/imageslidermaker/ism/css/my-slider.css"/>
+  <script src="../copygraf/images/imageslidermaker/ism/js/ism-2.2.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="areageraltopo">
-                <div class="arealogo">
-                    logo
-                </div>
-                <div>
-                    <ul class="menuitems">
-                        <a href=""><li>inicio</li></a>
-                        <a href=""><li>produtos</li></a>
-                        <a href=""><li>quem somos</li></a>
-                        <a href=""><li>contato</li></a>
-                    </ul>
-                </div>
-            </div>
+  <header>
+    <div class="container">
+      <div class="areageraltopo">
+        <div class="arealogo">
+        logo
         </div>
-        
-    </header> 
-    <section class="slidersection container">
-        <div class="ism-slider" data-play_type="loop" data-interval="4000" id="slidercopygraf">
-            <ol>
-            <li>
-                <img src="../copygraf/images/slideg1.png">                
-            </li>
-            <li>
-                <img src="../copygraf/images/slideg2.png">
-            </li>
-            <li>
-                <img src="../copygraf/images/imagemslide.png">                
-            </li>
-            </ol>
-        </div>
-    </section>
+      <div class="menugeral">
+        <ul class="menuitems">
+          <a href=""><li>inicio</li></a>
+          <a href=""><li>produtos</li></a>
+          <a href=""><li>quem somos</li></a>
+          <a href=""><li>contato</li></a>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </header> 
+  <section class="slidersection container">
+    <div class="ism-slider" data-play_type="loop" data-interval="4000" id="slidercopygraf">
+      <ol>
+      <li>
+        <img src="../copygraf/images/slideg1.png">                
+      </li>
+      <li>
+        <img src="../copygraf/images/slideg2.png">
+      </li>
+      <li>
+        <img src="../copygraf/images/imagemslide.png">                
+      </li>
+      </ol>
+    </div>
+  </section>
     <!---------------------------------------- section products------------------------------------------------------->
-    <section class="productsgeral">
-        <aside class="container">
-            <!-- Control buttons -->
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">todos</button>
-        <button class="btn" onclick="filterSelection('canecas')"> canecas</button>
-        <button class="btn" onclick="filterSelection('camisas')">camisas</button>
-        <button class="btn" onclick="filterSelection('taloes')">taloes</button>
-        <button class="btn" onclick="filterSelection('carimbos')">carimbos</button>
-    </div>
-  
-  <!-- Adicione a classe "show" (display:block) aos elementos filtrados e remova a classe "show" dos elementos que não estão selecionados -->
-  <div class="containerproducts">
-    <div class="filterDiv canecas">
-        <div class="imagembox">
-            <img src="../copygraf/images/camisetaportfolio.png" alt="" srcset="">
+  <section class="productsgeral">
+      <aside class="container">
+            <!----------------------------- Control buttons ----------------------------->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">todos</button>
+            <button class="btn" onclick="filterSelection('canecas')"> canecas</button>
+            <button class="btn" onclick="filterSelection('camisas')">camisas</button>
+            <button class="btn" onclick="filterSelection('taloes')">taloes</button>
+            <button class="btn" onclick="filterSelection('carimbos')">carimbos</button>
         </div>
-        <div class="areadesccard">
-            <h1 class="titulocard">Camisa Personalizada</h1>
-            <p>COD: 1045-3</p>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn" class="descricaocard">Descrição do produto</button>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Camisa personalizada da melhor qualidade
-                </p>
+      <!-- Adicione a classe "show" (display:block) aos elementos filtrados e remova a classe "show" dos elementos que não estão selecionados -->
+      <div class="containerproducts">
+      <div class="filterDiv camisas"><!-----------------------separação de cards de produtos 1------------------------->
+        <div class="areaproducts">
+          <div class="imagembox">
+              <img src="../copygraf/images/camisetaportfolio.png" alt="" srcset="">
+          </div>
+          <div class="areadesccard">   
+            <h2 class="titleproduct">
+              titulo do produto
+            </h2>
+            <span class="codeproduct">
+              COD: 56789
+            </span> 
+            <div id="myBtn" class="buttonproduct descriction" > <!--botão da descrição do produto anexado ao modal-->
+              Descrição
             </div>
+            
 
-            </div>          
-            <a href="https://wa.link/knune9" class="buttoncardbuy">Comprar Agora</a>
-        </div>
-        
-        
-    </div>
-    <div class="filterDiv camisas">1</div>
-    <div class="filterDiv canecas">2</div>
-    <div class="filterDiv carimbos">3</div>
-    <div class="filterDiv canecas camisas">4</div>
-    <div class="filterDiv carimbos">5</div>
-    <div class="filterDiv canecas">6</div>
-    <div class="filterDiv taloes">7</div>
-    <div class="filterDiv taloes">8</div>
-    <div class="filterDiv taloes carimbos">9</div>
-    <div class="filterDiv canecas">10</div>
-    <div class="filterDiv camisas">11</div>
-    <div class="filterDiv carimbos">12</div>
-  </div>
-        </aside>
-    </section>
+            <a href="https://wa.link/knune9" class="buttonproduct buy">Comprar Agora</a><!--botão de compra -->
+          </div>
+          
+        </div> 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Esta é uma camisa muito boa de excelente qualidade perfeita para vc que gosta de um bom produto.</p>
+          </div>
+        </div>         
+      </div>
+
+      <div class="filterDiv camisas">1</div>
+      <div class="filterDiv canecas">2</div>
+      <div class="filterDiv carimbos">3</div>
+      <div class="filterDiv canecas camisas">4</div>
+      <div class="filterDiv carimbos">5</div>
+      <div class="filterDiv canecas">6</div>
+      <div class="filterDiv taloes">7</div>
+      <div class="filterDiv taloes">8</div>
+      </div>
+    </aside>
+  </section>
     <footer>
 
     </footer>   

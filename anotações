@@ -1,0 +1,17 @@
+  <h1 class="titulocard">Camisa Personalizada</h1>
+            <p>COD: 1045-3</p>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn" class="descricaocard">Descrição do produto</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Camisa personalizada da melhor qualidade
+                </p>
+            </div>
+
+            </div>          
+            <a href="https://wa.link/knune9" class="buttoncardbuy">Comprar Agora</a>
