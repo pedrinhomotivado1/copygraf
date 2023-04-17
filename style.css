@@ -148,15 +148,21 @@ body {
 /* ----------------------- modal -----------------------*/
 #box {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 300px;
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #9765b4;
+  color: whitesmoke;
+  box-shadow: 7px 5px 10px 0px rgba(0, 0, 0, 0.3);
   z-index: 1;
+}
+.closemodal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
 }
 
 
