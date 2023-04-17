@@ -152,7 +152,7 @@ body {
   top: 50%;
   left: 50%;
   width: 300px;
-  padding: 20px;
+  padding: 10px;
   background-color: #9765b4;
   color: whitesmoke;
   box-shadow: 7px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -160,9 +160,9 @@ body {
 }
 .closemodal {
   position: absolute;
-  top: 0;
   right: 0;
-  margin-right: 10px;
+  top: -36px;
+  font-size: 30px;
 }
 
 
