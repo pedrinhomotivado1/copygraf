@@ -47,4 +47,15 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 ////////////////////////////////////// inicio do modal////////////////////////////////////////////////////
-let 
+const openBtn = document.getElementById('open-btn');
+const box = document.getElementById('box');
+
+openBtn.addEventListener('click', () => {
+  box.style.display = 'block';
+});
+
+box.addEventListener('click', (event) => {
+  if (event.target === box) {
+    box.style.display = 'none';
+  }
+});
