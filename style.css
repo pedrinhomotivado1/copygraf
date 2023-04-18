@@ -153,8 +153,8 @@ body {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 99; /* Sit on top */
-  left: 0vw;
-  top: 0vh;
+  left: 0;
+  top: 30vh;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
