@@ -154,7 +154,7 @@ body {
   position: fixed; /* Stay in place */
   z-index: 99; /* Sit on top */
   left: 0;
-  top: 30vh;
+  top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
