@@ -46,16 +46,45 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-////////////////////////////////////// inicio do modal////////////////////////////////////////////////////
-const openBtn = document.getElementById('open-btn');
-const box = document.getElementById('box');
-
-openBtn.addEventListener('click', () => {
-  box.style.display = 'block';
-});
-
-box.addEventListener('click', (event) => {
-  if (event.target === box) {
-    box.style.display = 'none';
+////////////////////////////////////// inicio do modal 0  ////////////////////////////////////////////////////
+// Get the modal
+var modal0 = document.getElementById("myModal0");
+// Get the button that opens the modal
+var btn0 = document.getElementById("myBtn0");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closemodal")[0];
+// When the user clicks on the button, open the modal
+btn0.onclick = function() {
+  modal0.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal0.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal0) {
+    modal0.style.display = "none";
   }
-});
+}
+////////////////////////////////////// inicio do modal 1  ////////////////////////////////////////////////////
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closemodal")[1];
+// When the user clicks on the button, open the modal
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal1.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal0) {
+    modal1.style.display = "none";
+  }
+}

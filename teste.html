@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de Popover</title>
+	<style>
+		.popoverclass {
+			position: absolute;
+			display: none;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 10px;
+			z-index: 9999;
+		}
+	</style>
+</head>
+<body>
+	<button id="popover-button1">Mostrar Popover</button>
+	<div id="popover1" class="popoverclass">
+		<p>Aqui está o texto do popover.</p>
+	</div>
+	<script>
+		var button = document.getElementById('popover-button1');
+		var popover = document.getElementById('popover1');
+		document.addEventListener('click', function(event) {
+			if (event.target != button && event.target.parentNode != popover) {
+				popover.style.display = 'none';
+			}
+		});
+		button.addEventListener('click', function(event) {
+			popover.style.display = 'block';
+			popover.style.left = (button.offsetLeft + button.offsetWidth) + 'px';
+			popover.style.top = button.offsetTop + 'px';
+		});
+	</script>
+</body>
+</html>
