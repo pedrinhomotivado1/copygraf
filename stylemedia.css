@@ -48,5 +48,16 @@
   #slidercopygraf {
       width: 100vw;
   }
-}
+  /* ------------------------------------------------botoes filtro menu ------------------------ */
+  #myBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 345px;
+    justify-content: center;
 
+  }
+  .btn {
+    padding: 10px;
+    margin: 2px;
+  }
+}
