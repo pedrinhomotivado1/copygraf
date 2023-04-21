@@ -1,0 +1,52 @@
+@media (max-width: 770px) {
+  .menugeral {
+    display: flex;
+    width: 0px;
+    height: 100%;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    right: 0  ;
+    z-index: 99;
+    justify-content: flex-end;
+    transition: all ease 1s;
+  }
+  .menuopen {
+    width: 150px;
+  }
+  .menuitems {
+    flex-direction: column;
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .menuitems li {    
+    border-radius: 0px;
+    position: inherit;
+    margin-bottom: 10px;
+  }  
+  .buttonmenuarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -50px;
+    top: 5px;
+    z-index: 100;
+  }
+  .menubutton {
+    width: 40px;
+    height: 5px;
+    background-color: blue;
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+  #slidercopygraf {
+      width: 100vw;
+  }
+}
+

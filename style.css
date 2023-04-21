@@ -24,9 +24,12 @@ body {
     width: 200px;
     height: 60px;
 }
-.menuitems {
+.menuopen {
     display: flex;
     list-style: none;
+}
+.menuitems {
+  display: flex;
 }
 .menuitems li {
     padding: 15px;
@@ -34,11 +37,17 @@ body {
     margin: 5px;
     border-radius: 5px;
     color: white;
+    transition: all 1s ease;
+    list-style: none;
+}
+.menuitems li:hover {
+  background-color: green;
 }
 .menuitems a {
     text-decoration: none;
     text-transform: capitalize;
 }
+
 /* -------------------------------   section slider -------------*******************/
 
 .slidersection {

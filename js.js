@@ -1,3 +1,13 @@
+function abrirmenu(){
+  let menuarea = document.getElementById("menugeral")
+  if(menuarea.classList.contains('menuopen')== false)
+  menuarea.classList.add('menuopen')
+  else{
+    menuarea.classList.remove('menuopen')
+  }
+}
+
+
 /*----------------------------------- codigo produtos ----------------------*/
 filterSelection("all")
 function filterSelection(c) {
