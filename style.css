@@ -3,6 +3,10 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+h2 {
+  line-height: 20px;
+  font-size: 20px;
+}
 
 /*-------------------       topo  --------------------      */
 
@@ -74,7 +78,7 @@ body {
     background-color: #f2eaff;
     border-radius: 5px;
     color: #505050;
-    max-width: 240px;
+    max-width: 244px;
     max-height: 400px;
     text-align: center;
     margin: 2px;
@@ -121,8 +125,15 @@ body {
     padding: 5px;
     display: flex;
     flex-direction: column;
-
-
+    position: relative;
+    bottom: 0px;
+  }
+  .areatitleproduct {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .titleproduct {
     font-size: 20px;
@@ -135,6 +146,7 @@ body {
     border-radius: 5px;
     max-width: 100%; 
     cursor: pointer;   
+    text-align: center;
   }
   .descriction {
     background-color: #01023a;
@@ -224,3 +236,14 @@ body {
   to {top: 0; opacity: 1}
 }
 /* ----------------------- fim do modal -----------------------*/
+
+/*----------------------------- area geral do mapa ---------------------------- */
+.areageralmaps {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.areageralmaps iframe {
+  min-width: 350px;
+}
