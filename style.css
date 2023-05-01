@@ -240,10 +240,10 @@ h2 {
 /*----------------------------- area geral do mapa ---------------------------- */
 .areageralmaps {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
   width: 100%;
 }
 .areageralmaps iframe {
-  min-width: 350px;
-}
+  min-width: 350px
