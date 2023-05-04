@@ -237,6 +237,10 @@ h2 {
 }
 /* ----------------------- fim do modal -----------------------*/
 
+/* ----------------------------------area da seção quem somos-----------------------------------*/
+
+
+
 /*----------------------------- area geral do mapa ---------------------------- */
 .areageralmaps {
   display: flex;
@@ -245,5 +249,10 @@ h2 {
   margin-top: 20px;
   width: 100%;
 }
-.areageralmaps iframe {
-  min-width: 350px
+.locatetitle {
+  margin: auto;
+}
+.areamap {
+  margin: 15px;
+  max-width: 1000px;
+}

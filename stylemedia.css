@@ -60,4 +60,7 @@
     padding: 10px;
     margin: 2px;
   }
+  .areamap iframe {
+    max-width: 300px;
+  }
 }
