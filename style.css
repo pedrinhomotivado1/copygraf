@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background: linear-gradient(135deg, #9765b4 0%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 h2 {
   line-height: 20px;
@@ -15,8 +16,8 @@ h2 {
     max-width: 1000px;
 }
 .areageraltopo {
-    height: 80px;
-    padding: 5px 20px;
+    height: 100px;
+    padding: 5px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,9 +25,10 @@ h2 {
     border-top: 1px black solid;
 }
 .arealogo {
-    background-color: royalblue;
     width: 200px;
-    height: 60px;
+}
+.arealogo img {
+  width: 200px;
 }
 .menuopen {
     display: flex;
@@ -36,7 +38,7 @@ h2 {
   display: flex;
 }
 .menuitems li {
-    padding: 15px;
+    padding: 10px 30px;
     background-color: blue;
     margin: 5px;
     border-radius: 5px;
@@ -239,7 +241,24 @@ h2 {
 
 /* ----------------------------------area da seção quem somos-----------------------------------*/
 
-
+.areaarticle {
+  display: flex;
+  padding: 20px;
+}
+.areaimgarticle {
+  width: 230px;
+  height: 230px;
+  margin-right: 15px;
+  
+}
+.areaimgarticle img {
+  width:230px ;
+  height: 230px;
+}
+.areadescarticle {
+  overflow: auto;
+  max-height: 230px;
+}
 
 /*----------------------------- area geral do mapa ---------------------------- */
 .areageralmaps {

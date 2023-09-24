@@ -60,6 +60,10 @@
     padding: 10px;
     margin: 2px;
   }
+  .areaarticle {
+    flex-direction: column;
+    align-items: center;
+  }
   .areamap iframe {
     max-width: 300px;
   }
